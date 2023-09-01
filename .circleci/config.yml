@@ -67,7 +67,7 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-            ./gradlew clean build
+            ./gradlew checkstyleMain
             ./gradlew bootJar
             docker build -t openmf/ph-ee-connector-channel:latest .
 
